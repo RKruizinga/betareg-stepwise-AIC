@@ -24,11 +24,9 @@ predictor_list = c(  'match_type',
                      'keyword_count_characters'
 )
 
-#call the function for backward stepwise AIC betareg and write it to a file
+#call the function for backward stepwise AIC betareg
 CTR_backwards_df = get_steps_aic(predictor_list, direction='backward', response_var=ctr_data$CTR, dataset=ctr_data)
-write.csv(CTR_backwards_df[1:2], file = "CTR_backwards_df.csv")
 
-#call the function for forward stepwise AIC betareg and write it to a file
+#call the function for forward stepwise AIC betareg
 CTR_forward_df = get_steps_aic(predictor_list, direction='forward', response_var=ctr_data$CTR, dataset=ctr_data)
-write.csv(CTR_forward_df[1:2], file = "CTR_forward_df.csv")
 ```
