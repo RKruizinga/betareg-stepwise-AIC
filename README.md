@@ -1,7 +1,7 @@
 # betareg-stepwise-AIC Example usage
 
 ```
-#list all the predictors in your dataframe
+#list all the predictors in your model
 predictor_list = c(  'match_type',
                      'ad_placement',
                      'device',
